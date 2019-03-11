@@ -4,7 +4,7 @@ import os
 PATH = os.getcwd()
 print(PATH)
 
-__version__ = '1.18.48'
+__version__ = '1.19.47'
 
 setup(
     name='shakespear',

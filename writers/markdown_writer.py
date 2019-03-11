@@ -64,7 +64,7 @@ class MarkdownWriter:
         return self
 
     def text(self, val):
-        self.markdown += f"{val} "
+        self.markdown += str(val)
         return self
 
     def ordered_list(self, iterable):
