@@ -254,21 +254,21 @@ class HtmlWriter:
         return self
 
     def dict_table_container(self, header, iterator, status='info'):
-        self.header(3, header, classes=[f'table-header table-header-{status}'])
+        self.header(3, header, classes=['table-header table-header-{}'.format(status)])
         self.start_div(classes=['table-container'])
         self.dict_table(iterator)
         self.end_div()
         return self
 
     def list_table_container(self, header, iterator, status='info'):
-        self.header(3, header, classes=[f'table-header table-header-{status}'])
+        self.header(3, header, classes=['table-header table-header-{}'.format(status)])
         self.start_div(classes=['table-container'])
         self.list_table(iterator)
         self.end_div()
         return self
 
     def text_badge(self, text, status='info'):
-        self.div(contents=text, classes=[f'background-{status}'])
+        self.div(contents=text, classes=['background-{}'.format(status)])
         return self
 
     def html(self, html):
