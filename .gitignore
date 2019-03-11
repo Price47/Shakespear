@@ -3,4 +3,4 @@ venv/*
 .pyc
 *.egg-info
 dist
-.idea
+.idea/*
